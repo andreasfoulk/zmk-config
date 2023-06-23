@@ -48,14 +48,14 @@
        		default_layer {
 		bindings = <
 	//╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Y       │  C       │  L       │  M       │  K       │   │  Z       │  F       │  U       │  , -     │  BKSP    │
-		&kp Y &kp C &kp L &kp M &kp K 				&kp Z &kp F  &kp U    &td MINUS COMMA  &kp BKSP 
+        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  BKSP    │
+            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp BKSP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  I       │  S       │ R ALT    │  T CMD   │  G       │   │  P       │  N CMD   │  E  ALT  │  A       │  O       │
-		&kp I &kp S &hm LALT R &hm LGUI T &kp G 		&kp P &hm RGUI N &hm RALT E &kp A &kp O
+        //│  A       │  S       │  D ALT   │  F CMD   │  G       │   │  H       │  J CMD   │  K ALT   │  L       │ P        │
+            &kp A      &kp S     &hm LALT D &hm LGUI F  &kp G          &kp H     &hm RGUI J &hm RALT K  &kp L      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-	//│  Q       │  V       │  W       │  D       │  J       │   │  B       │  H       │  / _     │ . !      │ X        │
-		&kp Q &kp V &kp W &kp D &kp J				&kp B &kp H  &td UNDERSCORE SLASH &td EXCL DOT &kp X
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , < -    │ . > !    │ / ? _    │
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M &td MINUS COMMA &td EXCL DOT &td UNDERSCORE SLASH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
 	//				   │  SPC MEH │	 SHIFT   │   │	CTRL    │  L2	   │
           				&mt LC(LS(LALT)) SPC &sk LSHIFT  &sk RCTRL &to 1
@@ -74,7 +74,7 @@
 		
 		right_layer {
 		bindings = <
-		&kp ESC  &kp C_PP &kp C_PREV  &kp C_NEXT  &kp LS(MINUS)    			&kp MINUS  &kp N7 &kp N8 &kp N9 &trans
+		&kp ESC  &kp C_PP &kp C_PREV  &kp C_NEXT  &kp LS(MINUS)    			&kp MINUS  &kp N7 &kp N8 &kp N9 &kp BKSP
 		&kp TAB  &trans   &kp C_VOL_DN  &kp C_VOL_UP  &kp LS(EQUAL) 			&kp EQUAL &kp N4  &kp N5  &kp N6   &kp ENTER
 		&to 4  &kp AMPS &kp SLASH &kp STAR &kp DOT    			&kp N0 &kp N1 &kp N2 &kp N3  &trans 
 					  &to 0 &sk LGUI  				&sk RALT  &to 2 
